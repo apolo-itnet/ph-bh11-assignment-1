@@ -13,6 +13,10 @@
 :root {
   --primary-color-lg: #c6e4d6;
   --secondary-color-blue:  #3498db; 
+  
+  --card-color-lblue: rgba(84, 144, 245, 0.2); 
+  --card-color-mgreen: rgb(198, 228, 214); 
+  --card-color-lyellow: rgb(247, 235, 207); 
 
   --btn-color-green: rgb(0, 106, 80);         
   --btn-color-lblue: rgb(84, 144, 245);         
@@ -22,6 +26,7 @@
 
   --color-white: #fff;
   --color-black: #000;
+  --color-gray: rgba(71, 71, 71, .5);
 }
 
 body {
@@ -128,8 +133,6 @@ header{
   /* <--- Start Pillars Style ---> */
 
   .pillars-section {
-    min-height: 100vh;
-
   
     .pillar-heading {
       text-align: left;
@@ -137,9 +140,12 @@ header{
 
       .pillar-title {
         display: inline-block;
-        font-size: 30px;
+        font-size: 35px;
         padding-bottom: 10px;
-        border-bottom: 3px solid var(--primary-color);
+      }
+      .pillar-subtitle {
+        font-size: 16px;
+        color: var(--text-color-gray);
       }
       
     }
@@ -150,13 +156,14 @@ header{
       align-items: center;
       margin-top: 30px;
       text-align: left;
+      gap: 15px;
   
         .card {
           display: flex;
           flex-direction: column;
           text-align: left;
-          width: 300px;
-          height: auto;
+          width: 265px;
+          height: 260px;
           padding: 20px;
           border-radius: 10px;
           background-color: rgba(22, 196, 127, .1);
@@ -182,10 +189,135 @@ header{
             line-height: 1.8;
             opacity: .8;
             border: none;
-            padding-top: 0px;
           }
+
         }
       }
   
     }
 
+  /* <--- End Pillars Style ---> */
+
+
+
+    /* <--- Start Future Style ---> */
+
+    .future-section {
+    
+      .future-heading {
+        text-align: left;
+        padding-top: 40px;
+  
+        .future-title {
+          display: inline-block;
+          font-size: 35px;
+          padding-bottom: 10px;
+        }
+
+        .future-des {
+          font-size: 16px;
+          line-height: 1.9;
+          color: var(--text-color-gray);
+        }
+        
+      }
+    
+      .card-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+        text-align: left;
+        gap: 15px;
+    
+          .card {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            width: 350px;
+            height: 300px;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: rgba(22, 196, 127, .1);
+            border: 3px solid transparent;
+            transition: border 1s ease-in-out, transform 1s ease;
+            
+            &:hover{
+             transform: scale(1.05);
+             border: 2px solid var(--btn-color-green);
+             background-color: white;
+            }
+    
+    
+            .card-img{
+              width: 30%;
+              height: 30%;
+              padding-bottom: 10px;
+            }
+            .card-heading{
+              font-size: 16px;
+              padding: 12px 0px;
+            }
+            .card-content{
+              font-size: 14px;
+              line-height: 1.8;
+              opacity: .8;
+              padding-bottom: 20px;
+            }
+
+          }
+
+          .card-1 {
+            background: var(--card-color-lblue) ;
+          
+
+            .btn-primary {
+              background-color: var(--secondary-color-blue);
+            }
+          }
+          .card-2 {
+            background: var(--card-color-mgreen);
+           
+
+            .btn-primary {
+              background: rgb(9, 161, 92);
+            }
+          }
+          .card-3 {
+            background:var(--card-color-lyellow);
+
+            .btn-primary {
+              background: rgb(255, 194, 57);
+            }
+          }
+        }
+    
+      }
+  
+    /* <--- End Future Style ---> */
+
+    /* <--- Start Advisor Style ---> */
+    
+    .chief-advisor{
+      margin-top: 40px;
+      padding: 20px 30px;
+      border-radius: 20px;
+      border: 1px solid var(--color-gray);
+      
+      .chief-heading {
+        background: url(../assets/quote-bg.png) no-repeat top left;
+
+        .chief-speech {
+          line-height: 1.8;
+          padding: 24px 0px;
+        }
+
+        .chief-name{
+          padding-bottom: 6px;
+        }
+
+      }
+    }
+    
+    
+    /* <--- End Advisor Style ---> */
