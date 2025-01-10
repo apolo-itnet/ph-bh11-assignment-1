@@ -11,7 +11,9 @@
 
 
 :root {
+  --primary-color-bg: #f5f5f5;
   --primary-color-lg: #c6e4d6;
+  --primary-color-lgo: rgba(198, 228, 214, 0.3);
   --secondary-color-blue:  #3498db; 
   
   --card-color-lblue: rgba(84, 144, 245, 0.2); 
@@ -31,6 +33,7 @@
 
 body {
   margin: 0px 160px;
+  background-color: var(--primary-color-bg) ;
 }
 
   /* <--- Button Style ---> */
@@ -303,6 +306,7 @@ header{
       padding: 20px 30px;
       border-radius: 20px;
       border: 1px solid var(--color-gray);
+      background: var(--color-white);
       
       .chief-heading {
         background: url(../assets/quote-bg.png) no-repeat top left;
@@ -319,5 +323,75 @@ header{
       }
     }
     
-    
     /* <--- End Advisor Style ---> */
+
+
+    /* <--- Start Opinion Style ---> */
+
+    
+
+    .opinion-section {
+      padding: 30px 0px;
+    
+      .opinion-heading {
+        text-align: left;
+        padding-top: 40px;
+  
+        .opinion-title {
+          display: inline-block;
+          font-size: 35px;
+          padding-bottom: 10px;
+        }
+
+        .opinion-des {
+          font-size: 16px;
+          line-height: 1.9;
+          color: var(--text-color-gray);
+        }
+        
+      }
+
+      .question-container{
+
+        width: 100%;
+        margin: 10px auto;
+        background-color: var(--color-white);
+        padding: 30px;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          text-align: left;
+          padding: 10px;
+
+          th {
+            background-color: var(--card-color-mgreen);
+            border: 1px solid rgba(14, 14, 14, 0.15);
+            padding: 20px 10px;
+          }
+          
+          td {
+            padding: 20px 10px;
+            border: 1px solid  rgba(71, 71, 71, .2);
+            
+            select, option {
+              padding: 10px 10px;
+              border: 2px solid  var(--color-gray);
+              border-radius:8px;
+              background-color: var(--card-color-mgreen);
+            }
+          }
+
+
+
+
+          
+          }
+
+        }
+
+      }
+   
+    /* <--- End Opinion Style ---> */
+
