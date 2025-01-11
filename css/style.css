@@ -522,21 +522,22 @@ header{
           border-radius: 10px;
           border: 1px solid var(--color-gray);
           background-color: var(--color-white);
+          cursor: pointer;
           transition: background .5s ease;
           
           &:hover{
             background: rgba(22, 196, 127, .1);
           }
 
+          &:hover .card-heading{
+            transition: transform .5s ease-in-out;
+            transform: scale(1.1);
+          }
+
           .card-heading{
             font-size: 35px;
             padding: 12px 0px;
-            cursor: pointer;
-            transition: transform .5s ease-in-out;
-          
-          &:hover{
-            transform: scale(1.1);
-          }
+            
           }
 
         }
@@ -609,10 +610,19 @@ header{
         border-bottom-left-radius: 10px;
       }
 
-      .btn-primary {
+      .btn-primary-plain {
+        font-size: 16px;
+        font-weight: 500;
         padding: 16px 30px ;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border: none;
+        cursor: pointer;
+        background-color: var(--btn-color-green);
+        color: white;
+
       }
 
     }
