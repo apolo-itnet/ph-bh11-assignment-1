@@ -57,7 +57,6 @@ body {
 
   /* <--- Start Header & Navbar Style ---> */
 header{
-  min-height: 100vh;
 
   nav {
     display: flex;
@@ -72,6 +71,11 @@ header{
       font-size: 24px;
       font-weight: bold;
       cursor: pointer;
+      color: tomato;
+
+      span {
+        color: var(--btn-color-green);
+      }
     }
   
   
@@ -98,7 +102,7 @@ header{
     padding: 50px 60px; 
     background-color: var(--primary-color-lg);
     border-radius: 20px;
-    margin-top: 50px;
+    margin-top: 25px;
     gap: 35px;
     height: 500px;
 
@@ -379,6 +383,7 @@ header{
               border: 2px solid  var(--color-gray);
               border-radius:8px;
               background-color: var(--card-color-mgreen);
+              cursor: pointer;
             }
           }
 
@@ -523,20 +528,21 @@ header{
           border: 1px solid var(--color-gray);
           background-color: var(--color-white);
           cursor: pointer;
-          transition: background .5s ease;
+          transition: background .5s ease-in-out;
           
           &:hover{
             background: rgba(22, 196, 127, .1);
           }
 
           &:hover .card-heading{
-            transition: transform .5s ease-in-out;
             transform: scale(1.1);
           }
 
           .card-heading{
             font-size: 35px;
             padding: 12px 0px;
+            transition: transform .5s ease-in-out;
+
             
           }
 
