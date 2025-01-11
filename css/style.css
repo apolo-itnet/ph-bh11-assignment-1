@@ -395,3 +395,86 @@ header{
    
     /* <--- End Opinion Style ---> */
 
+
+
+    .news-section {
+      padding: 30px 0px;
+    
+      .news-heading {
+        text-align: left;
+        padding: 20px 0px;
+  
+        .news-title {
+          display: inline-block;
+          font-size: 35px;
+          padding-bottom: 10px;
+        }
+
+        .news-des {
+          font-size: 16px;
+          line-height: 1.6;
+          color: var(--text-color-gray);
+        }
+        
+      }
+
+      .news-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;        
+        padding: 20px;
+        
+        .news-card{
+          display: flex;
+          align-items: center;
+          width: 100%;
+          gap: 30px;
+          background-color: var(--color-white);
+          padding: 30px;
+          border-radius: 20px;
+          
+          .news-image {
+            width: 100%;
+            
+            img {
+              width: 400px;
+              height: 300px;
+              border-radius: 20px;
+            }
+          }
+          
+          .news-content{
+            
+            .source-icon {
+              width: 30%;
+              padding: 10px 0px;
+            }
+            
+            .date, .time {
+              font-size: 14px;
+              color: var(--color-gray);
+            }
+            
+            .short-details {
+              padding: 10px 0 20px 0;
+              font-size: 15px;
+              font-weight: 400;
+              line-height: 1.5;
+              text-align: justify;
+            }
+          }
+        }
+
+        .news-1{
+
+        }
+
+      }
+    
+    
+    
+    
+  }
+
+
